@@ -1,0 +1,24 @@
+* Преобразование файла D:\лабы\лабы пр\ывф\Project1.dpr *
+К параметрам пользователя добавлены определения -dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL
+Найдены все файлы модулей
+* Исправление списка используемых модулей в файле D:\лабы\лабы пр\ывф\Project1.dpr *
+
+*** Преобразование файлов модулей, принадлежащих проекту/пакету ***
+* Преобразование файла D:\лабы\лабы пр\ывф\Unit1.pas *
+Кодировка изменена с cp1251 на UTF-8
+Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+Replaced call FileExists(m[PageControl1.ActivePageIndex].Ts.Caption) with FileExistsUTF8(m[PageControl1.ActivePageIndex].Ts.Caption) { *Converted from FileExists* }
+Added unit FileUtil to uses section
+* Преобразование файла D:\лабы\лабы пр\ывф\Unit2.pas *
+Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+* Преобразование файла D:\лабы\лабы пр\ывф\Unit3.pas *
+Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+
+*** Исправление списков используемых модулей и файлов форм ***
+* Исправление файла формы D:\лабы\лабы пр\ывф\Unit1.lfm *
+Replaced type "TRichEdit" with "TMemo".
+Removed property "TextHeight".
+Removed property "OldCreateOrder".
+Removed property "PlainText".
+Преобразование заняло: 00:00:07
+Преобразование завершено.

@@ -1,0 +1,56 @@
+object ExitConfirm: TExitConfirm
+  Left = 531
+  Top = 272
+  Width = 273
+  Height = 117
+  Caption = #1042#1099#1093#1086#1076
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StaticText1: TStaticText
+    Left = 64
+    Top = 16
+    Width = 4
+    Height = 4
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 40
+    Width = 257
+    Height = 41
+    Align = alBottom
+    TabOrder = 1
+    object Button1: TButton
+      Left = 8
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = #1044#1072
+      TabOrder = 0
+    end
+    object Button3: TButton
+      Left = 176
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = #1054#1090#1084#1077#1085#1072
+      TabOrder = 1
+      OnClick = Button3Click
+    end
+    object Button2: TButton
+      Left = 96
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = #1053#1077#1090
+      TabOrder = 2
+    end
+  end
+end

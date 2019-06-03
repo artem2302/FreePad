@@ -1,0 +1,194 @@
+object Form1: TForm1
+  Left = 334
+  Top = 136
+  Width = 928
+  Height = 480
+  Caption = 'FreePad'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  OnCloseQuery = FormCloseQuery
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 912
+    Height = 424
+    ActivePage = TabSheet1
+    Align = alClient
+    TabOrder = 0
+    OnChange = PageControl1Change
+    object TabSheet1: TTabSheet
+      Caption = 'NewFile'
+      object RichEdit1: TRichEdit
+        Left = 0
+        Top = 0
+        Width = 904
+        Height = 396
+        Align = alClient
+        PlainText = True
+        PopupMenu = PopupMenu1
+        ScrollBars = ssBoth
+        TabOrder = 0
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 884
+    object N1: TMenuItem
+      Caption = 'Файл'
+      object N18: TMenuItem
+        Caption = 'Новый'
+        ShortCut = 16462
+        OnClick = N18Click
+      end
+      object N5: TMenuItem
+        Caption = 'Открыть'
+        ShortCut = 16463
+        OnClick = N5Click
+      end
+      object N6: TMenuItem
+        Caption = 'Сохранить'
+        ShortCut = 16467
+        OnClick = N6Click
+      end
+      object N7: TMenuItem
+        Caption = 'Сохранить как'
+        OnClick = N7Click
+      end
+      object N8: TMenuItem
+        Caption = 'Закрыть'
+        ShortCut = 16471
+        OnClick = N8Click
+      end
+    end
+    object N2: TMenuItem
+      Caption = 'Редактировать'
+      object N9: TMenuItem
+        Action = EditCopy1
+        Caption = 'Копировать'
+      end
+      object N10: TMenuItem
+        Action = EditCut1
+        Caption = 'Вырезать'
+      end
+      object N11: TMenuItem
+        Action = EditPaste1
+        Caption = 'Вставить'
+      end
+      object N12: TMenuItem
+        Action = EditUndo1
+        Caption = 'Отмена'
+      end
+      object N17: TMenuItem
+        Caption = 'Выделить все'
+        ShortCut = 16449
+        OnClick = N17Click
+      end
+      object N19: TMenuItem
+        Caption = 'Перенос строк'
+        Checked = True
+        OnClick = N19Click
+      end
+    end
+    object N3: TMenuItem
+      Caption = 'Печать'
+      object N13: TMenuItem
+        Caption = 'Печатать'
+        ShortCut = 16464
+        OnClick = N13Click
+      end
+      object N14: TMenuItem
+        Caption = 'Настроить принтер'
+        OnClick = N14Click
+      end
+    end
+    object N4: TMenuItem
+      Caption = 'О программе'
+      object N15: TMenuItem
+        Caption = 'Версия'
+        OnClick = N15Click
+      end
+      object N16: TMenuItem
+        Caption = 'Помощь'
+        ShortCut = 112
+        OnClick = N16Click
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 856
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 824
+  end
+  object PrintDialog1: TPrintDialog
+    Left = 800
+  end
+  object PrinterSetupDialog1: TPrinterSetupDialog
+    Left = 776
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 744
+    object Copy1: TMenuItem
+      Action = EditCut1
+      Caption = 'Вырезать'
+    end
+    object Cut1: TMenuItem
+      Action = EditCopy1
+      Caption = 'Копировать'
+    end
+    object Paste1: TMenuItem
+      Action = EditPaste1
+      Caption = 'Вставить'
+    end
+    object SelectAll1: TMenuItem
+      Action = EditSelectAll1
+      Caption = 'Выделить все'
+    end
+  end
+  object ActionList1: TActionList
+    Left = 720
+    object EditCut1: TEditCut
+      Category = 'Edit'
+      Caption = 'Cu&t'
+      Hint = 'Cut|Cuts the selection and puts it on the Clipboard'
+      ImageIndex = 0
+      ShortCut = 16472
+    end
+    object EditCopy1: TEditCopy
+      Category = 'Edit'
+      Caption = '&Copy'
+      Hint = 'Copy|Copies the selection and puts it on the Clipboard'
+      ImageIndex = 1
+      ShortCut = 16451
+    end
+    object EditPaste1: TEditPaste
+      Category = 'Edit'
+      Caption = '&Paste'
+      Hint = 'Paste|Inserts Clipboard contents'
+      ImageIndex = 2
+      ShortCut = 16470
+    end
+    object EditSelectAll1: TEditSelectAll
+      Category = 'Edit'
+      Caption = 'Select &All'
+      Hint = 'Select All|Selects the entire document'
+      ShortCut = 16449
+    end
+    object EditUndo1: TEditUndo
+      Category = 'Edit'
+      Caption = '&Undo'
+      Hint = 'Undo|Reverts the last action'
+      ImageIndex = 3
+      ShortCut = 16474
+    end
+  end
+end
